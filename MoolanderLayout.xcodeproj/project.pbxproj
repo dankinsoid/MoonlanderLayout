@@ -3,17 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		835CB08326E53DC800ADFFA3 /* layer3.png in Resources */ = {isa = PBXBuildFile; fileRef = 835CB08226E53DC800ADFFA3 /* layer3.png */; };
+		83B48A8826E15E0C00D95BD5 /* layer2.png in Resources */ = {isa = PBXBuildFile; fileRef = 83B48A8526E15E0C00D95BD5 /* layer2.png */; };
+		83B48A8926E15E0C00D95BD5 /* layer1.png in Resources */ = {isa = PBXBuildFile; fileRef = 83B48A8626E15E0C00D95BD5 /* layer1.png */; };
+		83B48A8A26E15E0C00D95BD5 /* layer0.png in Resources */ = {isa = PBXBuildFile; fileRef = 83B48A8726E15E0C00D95BD5 /* layer0.png */; };
 		83C675E026D4D7DE005320CA /* MoolanderLayoutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C675DF26D4D7DE005320CA /* MoolanderLayoutApp.swift */; };
 		83C675E226D4D7DE005320CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C675E126D4D7DE005320CA /* ContentView.swift */; };
 		83C675E426D4D7DF005320CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C675E326D4D7DF005320CA /* Assets.xcassets */; };
 		83C675E726D4D7DF005320CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C675E626D4D7DF005320CA /* Preview Assets.xcassets */; };
+		83C675F026D4D877005320CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C675EF26D4D877005320CA /* AppDelegate.swift */; };
+		83C675F326D4D8F1005320CA /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = 83C675F226D4D8F1005320CA /* HotKey */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		835CB08226E53DC800ADFFA3 /* layer3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = layer3.png; sourceTree = SOURCE_ROOT; };
+		83B48A8526E15E0C00D95BD5 /* layer2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = layer2.png; sourceTree = SOURCE_ROOT; };
+		83B48A8626E15E0C00D95BD5 /* layer1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = layer1.png; sourceTree = SOURCE_ROOT; };
+		83B48A8726E15E0C00D95BD5 /* layer0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = layer0.png; sourceTree = SOURCE_ROOT; };
 		83C675DC26D4D7DE005320CA /* MoolanderLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoolanderLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C675DF26D4D7DE005320CA /* MoolanderLayoutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoolanderLayoutApp.swift; sourceTree = "<group>"; };
 		83C675E126D4D7DE005320CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -21,6 +31,7 @@
 		83C675E626D4D7DF005320CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		83C675E826D4D7DF005320CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83C675E926D4D7DF005320CA /* MoolanderLayout.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoolanderLayout.entitlements; sourceTree = "<group>"; };
+		83C675EF26D4D877005320CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C675F326D4D8F1005320CA /* HotKey in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +66,11 @@
 			isa = PBXGroup;
 			children = (
 				83C675DF26D4D7DE005320CA /* MoolanderLayoutApp.swift */,
+				83B48A8726E15E0C00D95BD5 /* layer0.png */,
+				83B48A8626E15E0C00D95BD5 /* layer1.png */,
+				83B48A8526E15E0C00D95BD5 /* layer2.png */,
+				835CB08226E53DC800ADFFA3 /* layer3.png */,
+				83C675EF26D4D877005320CA /* AppDelegate.swift */,
 				83C675E126D4D7DE005320CA /* ContentView.swift */,
 				83C675E326D4D7DF005320CA /* Assets.xcassets */,
 				83C675E826D4D7DF005320CA /* Info.plist */,
@@ -87,6 +104,9 @@
 			dependencies = (
 			);
 			name = MoolanderLayout;
+			packageProductDependencies = (
+				83C675F226D4D8F1005320CA /* HotKey */,
+			);
 			productName = MoolanderLayout;
 			productReference = 83C675DC26D4D7DE005320CA /* MoolanderLayout.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +134,9 @@
 				Base,
 			);
 			mainGroup = 83C675D326D4D7DE005320CA;
+			packageReferences = (
+				83C675F126D4D8F1005320CA /* XCRemoteSwiftPackageReference "HotKey" */,
+			);
 			productRefGroup = 83C675DD26D4D7DE005320CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,8 +151,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B48A8A26E15E0C00D95BD5 /* layer0.png in Resources */,
+				835CB08326E53DC800ADFFA3 /* layer3.png in Resources */,
 				83C675E726D4D7DF005320CA /* Preview Assets.xcassets in Resources */,
 				83C675E426D4D7DF005320CA /* Assets.xcassets in Resources */,
+				83B48A8826E15E0C00D95BD5 /* layer2.png in Resources */,
+				83B48A8926E15E0C00D95BD5 /* layer1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C675F026D4D877005320CA /* AppDelegate.swift in Sources */,
 				83C675E226D4D7DE005320CA /* ContentView.swift in Sources */,
 				83C675E026D4D7DE005320CA /* MoolanderLayoutApp.swift in Sources */,
 			);
@@ -271,6 +299,7 @@
 				CODE_SIGN_ENTITLEMENTS = MoolanderLayout/MoolanderLayout.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"MoolanderLayout/Preview Content\"";
 				DEVELOPMENT_TEAM = 4733T56UZW;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -295,6 +324,7 @@
 				CODE_SIGN_ENTITLEMENTS = MoolanderLayout/MoolanderLayout.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"MoolanderLayout/Preview Content\"";
 				DEVELOPMENT_TEAM = 4733T56UZW;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -333,6 +363,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		83C675F126D4D8F1005320CA /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soffes/HotKey";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		83C675F226D4D8F1005320CA /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83C675F126D4D8F1005320CA /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83C675D426D4D7DE005320CA /* Project object */;
 }

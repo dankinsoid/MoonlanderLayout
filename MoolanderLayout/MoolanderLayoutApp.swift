@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct MoolanderLayoutApp: App {
+    
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+					ContentView(layer: 1)
         }
+        .windowStyle(HiddenTitleBarWindowStyle())
     }
 }
